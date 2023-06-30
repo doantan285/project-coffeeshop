@@ -1,0 +1,121 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #e6e8ea;
+}
+
+.container {
+    height: 100vh;
+    color: #46484a;
+}
+
+.wrapper-invoice {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.invoice-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.invoice-header i {
+    color: #7ab420;
+}
+
+.invoice-body {
+    margin: 2rem auto;
+    width: 35rem;
+    font-size: 1.5rem;
+}
+
+.invoice-body_top {
+    margin-bottom: 0.25rem;
+}
+
+.invoice-body_bot {
+    border: 0.1rem solid #b79c2d;
+}
+
+.invoice-body_text {
+    margin: 1rem;
+}
+
+.invoice-body_text span {
+    color: rgb(129, 129, 129);
+}
+
+.invoice-footer {
+    display: flex;
+    width: 35rem;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+
+.invoice-footer input {
+    padding: 0.5rem;
+    border: none;
+    color: #fff;
+    background:rgb(129, 129, 129);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.invoice-footer a input {
+    padding: 1rem;
+    background: #2a9dcc;
+    color: #fff;
+    border: none;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Thêm đoạn mã CSS sau vào cuối phần CSS hiện tại */
+
+@media screen and (max-width: 767px) {
+    .wrapper-invoice {
+        width: 90%;
+        max-width: 100%;
+    }
+
+    .invoice-header {
+        font-size: 1rem;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .invoice-body {
+        font-size: 1.25rem;
+        width: 100%;
+    }
+
+    .invoice-footer {
+        flex-direction: column;
+        align-items: center;
+        width: 0;
+    }
+
+    .invoice-footer input {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    .invoice-footer a input {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* .invoice-header {
+        margin-top: 2rem;
+    } */
+}
